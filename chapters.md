@@ -12,10 +12,12 @@ title: Chapters
 </ol>
 -->
 
-{% for subpage in site.pages %}
-||<a href="{{url}}{{site.baseurl}}/{{subpage.folder}}{{subpage.title}}">{{subpage.title}}</a>|
+{% for page in site.pages %}
+ {% if folder == chapters %}
+||<a href="{{url}}{{site.baseurl}}/{{page.folder}}{{page.title}}">{{page.title}}</a>|
+{% endif %}
 {% endfor %}
-
+![]({{site.imageurl}}logo.png)
 ##  Chapters
 
 1   | IEEE Microwave Theory and Techniques Society (MTT 17) (SBC08071)
