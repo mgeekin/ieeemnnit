@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
+    <a class="navbar-brand" href="{{ siteurl }}{{site.baseurl}}/"><img height="60px" src="{{ siteurl }}{{site.baseurl}}/assets/images/logo.png" alt="{{ site.title }}" title="{{ site.title }}" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+<ul class="navbar-nav ml-auto">
+{% for post in site.pages %}
+
+<li class="navbar-item"><a class="nav-link" href="{{ siteurl }}{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+<br>
+
+{% endfor %}
+</ul>
+
+</nav>

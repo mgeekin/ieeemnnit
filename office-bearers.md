@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Office bearers
+order: 2
+topmenu: true
 ---
 
 # OFFICE BEARERS

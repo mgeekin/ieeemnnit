@@ -40,4 +40,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-permalink: /:title
+
+submenu: [Chapters, Affinity Group, IEEE Joint Chapters]
+
+permalink: /:path/:title/

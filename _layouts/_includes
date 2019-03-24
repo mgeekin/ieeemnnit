@@ -1,0 +1,27 @@
+<nav class="nav">
+<ul class="nav-item">
+{% for sub in site.submenu %}
+<li class="nav-item"><a href="{{site.baseurl}}/{{sub}}" class="nav-item"> {{sub}}</a></li>
+
+<ol class="submenu">
+{% assign sorted_pages =site.pages | sort:"order"%}
+{% for page in sorted_pages %}
+
+{% if page.submenu == true %}
+{% for pt in page.topmenu %}
+{% if pt == sub %}
+
+
+<li class="nav-item"><a href="{{site.baseurl}}/{{sub}}/{{page.title}}" class="nav-item"> {{page.title}}</a></li>
+
+{% endif %}
+{% endfor %}
+
+{% endif %}
+
+{% endfor %}
+</ol>
+{% endfor %}
+
+</ul>
+</nav>
