@@ -1,66 +1,50 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ siteurl }}{{site.baseurl}}/assets/css/style.css">
-    <link rel="stylesheet" href="{{ siteurl }}{{site.baseurl}}/assets/css/ieeebootstrap.css">
-    <!--<link rel="stylesheet" href="{{ siteurl }}{{site.baseurl}}/assets/css/greys.css">-->
-    <title>{{ page.title }}</title>
-  </head>
-  <body>
 
-<div class="global-nav jumbotron">
-      <div class="container">
-        <div class="col-md-9">
-          <div class="pull-left">
-            <ul>
-              <li>
-                <a href="http://www.ieee.org/" class="first">IEEE.org</a>
-              </li>
-              <li>
-                <a href="http://ieeexplore.ieee.org/">IEEE <em>Xplore</em> Digital Library</a>
-              </li>
-              <li>
-                <a href="http://standards.ieee.org/">IEEE Standards</a>
-              </li>
-              <li>
-                <a href="http://spectrum.ieee.org/">IEEE Spectrum</a>
-              </li>
-              <li>
-                <a href="http://www.ieee.org/sitemap" class="last">More Sites</a>
-              </li>
-            </ul>
-          </div>
+  <div class="global-nav" >
+    <div class="container">
+      <div class="col-md-9">
+        <div class="pull-left">
+          <ul>
+            <li>
+              <a href="http://www.ieee.org/" class="first">IEEE.org</a>
+            </li>
+            <li>
+              <a href="http://ieeexplore.ieee.org/">IEEE
+                <em>Xplore</em> Digital Library</a>
+            </li>
+            <li>
+              <a href="http://standards.ieee.org/">IEEE Standards</a>
+            </li>
+            <li>
+              <a href="http://spectrum.ieee.org/">IEEE Spectrum</a>
+            </li>
+            <li>
+              <a href="http://www.ieee.org/sitemap" class="last">More Sites</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron banner">
-      <div class="container">
-        <div class="pull-right hidden-xs">
-          <a href="http://www.ieee.org" title="IEEE logo">
-    				    				<img src="{{ siteurl }}{{site.baseurl}}/assets/images/ieee_mb_black.png" id="ieee_mb" class="img-responsive" alt="IEEE logo">
-      		</a>
-        </div>
-          			<h1 class="site-title"><a href="/" rel="home">{{site.title}}</a></h1>
-        
+  </div>
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron banner">
+    <div class="container" >
+      <div class="pull-right hidden-xs">
+        <a href="http://www.ieee.org" title="IEEE logo">
+          <img src="{{ siteurl }}{{site.baseurl}}/assets/images/ieee_mb_black.png" id="ieee_mb" class="img-responsive" alt="IEEE logo">
+        </a>
       </div>
-    </div>
+      <h1 class="site-title">
+        <a href="{{siteurl}}" rel="home">{{site.title}}</a>
+      </h1>
 
-    <div class="container search">
-      <div class="row">
-        <div class="col-sm-6">
-
-
-
-        </div>
+      <div>
         <!-- social media icons go here -->
         {% include socialmedia.html %}
-        </div>
       </div>
     </div>
+  </div>
+
+  <script>
+  w3.addStyle('.container','padding','0')
+  </script>

@@ -1,18 +1,70 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
-    <a class="navbar-brand" href="{{ siteurl }}{{site.baseurl}}/"><img height="60px" src="{{ siteurl }}{{site.baseurl}}/assets/images/logo.png" alt="{{ site.title }}" title="{{ site.title }}" ></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-      aria-label="Toggle navigation">
+<div class="row container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
+    <a class="navbar-brand" href="#">
+      <img height="60px" src="{{ siteurl }}{{site.baseurl}}/assets/images/logo.png" alt="{{ site.title }}"
+        title="{{ site.title }}">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
 
-<ul class="navbar-nav ml-auto">
-{% for post in site.pages %}
+    <div class="container-fluid ">
+      {% assign ordered_pages=site.pages|sort:"order" %}
+      <div class="nav">
+        <div class="container-fluid ">
 
-<li class="navbar-item"><a class="nav-link" href="{{ siteurl }}{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
-<br>
 
-{% endfor %}
-</ul>
 
+
+
+
+
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ">
+              {% for p1 in ordered_pages %} {% if p1.topmenu == true %}
+              <li class="nav-item">
+                <a href="{{site.baseurl}}{{p1.url}}" class="nav-link">
+                  {{p1.title}} {% assign a2=site.submenu %} {% for a2loop in a2%} {%if a2loop==p1.title%}
+              <li>
+                <a class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                </a>
+
+
+
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                  {% assign ordered_pages_p2=site.pages|sort:"submenuindex" %} {% for p2 in ordered_pages_p2 %}
+                  {% if p2.submenu == true %}
+                  {% for a1 in p2.submenutype %} {% if a1 == p1.title %}
+                  <a href="{{site.baseurl}}{{p2.url}}" class="dropdown-item">{{p2.title}}</a>
+                  {% endif %} {% endfor %} {% endif %} {% endfor %}
+                </div>
+
+
+
+              </li>
+              {%endif%} {%endfor%}
+              <ul>
+
+              </ul>
+              </a>
+              </li>
+              {% endif %} {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      </ul>
+
+
+    </div>
+
+
+
+
+</div>
 </nav>
+</div>
