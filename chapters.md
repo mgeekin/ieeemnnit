@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Chapters
 topmenu: true
 order: 3

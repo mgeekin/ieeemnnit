@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: ieeemnnit.org
+title: IEEE MNNIT
 email: ieeemnnit@mnnit.ac.in
 imageurl: "https://raw.githubusercontent.com/mgeekin/ieeemnnit/master/assets/images/"
 description: >- # this means to ignore newlines until "baseurl:"
@@ -25,7 +25,8 @@ github_username:  mgeekin
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: IEEE-Students-Branch-Jekyll-Theme
+remote_theme: mgeekin/IEEE-Students-Branch-Jekyll-Theme
 plugins:
   - jekyll-feed
 
@@ -40,7 +41,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-submenu: [Chapters, Affinity Group, IEEE Joint Chapters]
-
+submenu: [Chapters]
+assets: https://raw.githubusercontent.com/mgeekin/ieeemnnit/master/assets/
 permalink: /:path/:title/
