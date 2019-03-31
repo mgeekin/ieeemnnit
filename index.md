@@ -7,12 +7,30 @@ topmenu: true
 order: 0
 ---
 
+#  Home template
 
+create index.md with following yaml
+---
+layout: page
+title: Office bearers
+order: 2
+topmenu: true
+---
+List your office bearers  
+to change the content of this page create a file named  
+'index.md'   
+in the root dir with below yaml
 
-##  Student Branch Code: STB08071
-###  School Code: A28995
-
-The Institute of Electrical and Electronics Engineers Inc. (IEEE) was founded in 1884 with a mission to foster technological innovation and excellence for the benefit of humanity.  
-Today, It serves over 80,000 student members among about 395,000 members in over 160 countries.
-  
-#####   *Only for backup and restore of student branch data. this is not official site.
+`
+layout: page
+`  
+`
+title: Home 
+`
+`order: 1`   
+`topmenu: true`   
+layout used is page  
+we want it to appear in top menu so   
+`topmenu: true`
+and order of menu is 2 so  
+`order: 1`

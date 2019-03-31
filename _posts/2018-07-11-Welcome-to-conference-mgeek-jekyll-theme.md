@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "conference-mgeek-jekyll-theme!"
+title: "HELP file"
 date: 07-11 15:25:08 +0530
 categories: jekyll update theme
 ---
-<div class="container" markdown="1">
-    <div class="row" markdown="1">
-just a temporary post to be shown in the notice and updates section on the home page
-</div>
-</div>
+
+just a temporary post to be shown in the notice and updates section on the home page   
+all the posts in _post folder will be listed here.
