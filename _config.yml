@@ -13,14 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-<<<<<<< HEAD
 title: IEEE MNNIT
 email: ieeemnnit@mnnit.ac.in
 imageurl: "https://raw.githubusercontent.com/mgeekin/ieeemnnit/master/assets/images/"
 =======
 title: IEEE Student branch Jekyll theme
 email: prateekrajgautam.dev@gmail.com
->>>>>>> 9bf09d0ec7f46fb2ad979b5b840fc70ae171bc95
 description: >- # this means to ignore newlines until "baseurl:"
   Student Branch Code: STB08071. School Code: A28995. The Institute of Electrical and Electronics Engineers Inc. (IEEE) was founded in 1884 with a mission to foster technological innovation and excellence for the benefit of humanity. 
 baseurl: "/ieeemnnit" # the subpath of your site, e.g. /blog
@@ -46,11 +44,10 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-<<<<<<< HEAD
 submenu: [Chapters]
 assets: https://raw.githubusercontent.com/mgeekin/ieeemnnit/master/assets/
 permalink: /:path/:title/
 =======
 topmenu: [true]
 submenu: [Chapters, Workshops, Activities]
->>>>>>> 9bf09d0ec7f46fb2ad979b5b840fc70ae171bc95
+
