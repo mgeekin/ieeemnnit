@@ -4,7 +4,7 @@ title: Chapters
 topmenu: true
 order: 3
 ---
-{% for sub in site.submenu %}
+{% for sub in page.title %}
 ##  {{sub}}
 
 <ol class="submenu">
