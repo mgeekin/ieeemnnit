@@ -27,7 +27,7 @@ github_username:  prateekrajgautam
 # Build settings
 markdown: kramdown
 theme: ieee-students-branch-jekyll-theme
-#remote_theme: mgeekin/ieee-students-branch-jekyll-theme
+remote_theme: mgeekin/ieee-students-branch-jekyll-theme
 plugins:
   - jekyll-feed
 
